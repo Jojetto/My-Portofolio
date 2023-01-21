@@ -1,0 +1,278 @@
+           * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+            margin:0%;
+            padding:0%;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            text-decoration: none;
+            list-style: none;   
+            }
+            body {
+                background-color: rgb(218, 216, 216);
+            }
+            header {
+                background-color: rgb(206, 150, 77);
+                position: fixed;
+                align-items: center;
+                z-index: 999;
+                display: flex;
+                width: 100%;
+                padding: 10px 200px ;
+                justify-content: space-between;
+            }
+            .navigation a {
+                font-size: 1.3em;
+                text-decoration: none;
+                color: white ;
+                padding:10px;
+                font-weight: 400;
+            }  
+            header h1{
+                text-align: center;
+            }  
+            .navigation :hover{
+                color: rgb(19, 9, 107);
+            }
+            section {
+                color:rgb(5, 4, 4) ;
+                text-align: center;
+                padding:200px;
+            }
+            .main {
+                width: 100%;
+                min-height: 100vh
+            }
+            .main h2{
+                font-size: 1.7em;
+                font-weight: 700;
+            }
+            .main h3{
+            color: rgb(206, 150, 77);
+            font-weight: 600;
+            font-size: 3em;
+            margin-top: 30px;
+            }
+            .main h4{
+                font-weight: 600;
+                font-size: 2em;
+                color: rgb(206, 150, 77);
+            }
+            .main .button{
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                color: black;
+                border: 1px solid rgb(206, 150, 77);
+                text-decoration: none;
+                font-weight: 500;
+                display: inline-block;
+                font-size: 1.1em;
+                padding: 0.9em;
+                margin-top: 50px;
+                border-radius: 10px ;
+                transition: ease 0.9s;
+            }
+            .main .button:hover {
+                transform: scale(1.1);
+                background-color: rgb(204, 130, 32);
+            }
+            .title {    
+            display: flex;
+            justify-content: center;
+            color: rgb(204, 130, 32);
+            font-size: 1,9em;
+            font-weight: 600;
+            margin-bottom: 30px;
+            }
+            section .content {
+                position: relative;
+                display:flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                overflow: hidden;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+            .content .card {
+                position: relative;
+                width: 350px;
+                height: 350px;
+                box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
+                25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+                padding: 15px;
+                margin: 35px;
+                transition: ease 0.6s;
+            }
+            .content .card:nth-child(1) {
+                border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+            }
+            .content .card:nth-child(2) {
+                border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+            }
+            .content .card:nth-child(3) {
+                border-radius: 65% 35% 31% 69% / 57% 59% 41% 43%;
+            }
+            .card:hover {
+                transform:scale(1.2) ;
+                border-radius: 50%;
+            }
+            .content .card::before {
+                content: '';
+                position: absolute;
+                top: 60px;
+                left: 82px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background: #fff;
+                opacity: 0.5;
+            }
+            .content .card::after {
+                content: '';
+                position: absolute;
+                top: 100px;
+                left: 70px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #fff;
+                opacity: 0.5;
+            }
+            .icon {
+            font-size: 8em;
+            color: rgb(204, 130, 32);
+            }
+            .info h3 {
+            text-transform: uppercase;
+            width: 100% ;
+            color: rgb(204, 130, 32);
+            font-size: 1.2em ;
+            font-weight: 700;
+            margin: 10px;
+            }
+            .main .icons a{
+            font-size: 2em;
+            text-align: center;
+            padding: 0.9em;
+            color: rgb(204, 130, 32);
+            transition: ease 0.9s;
+            }
+            .content .card .waterSpot {
+                padding-left: 10px;
+                margin-left: 50px;
+                background: #eff0f4;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3), inset -2px -5px 10px rgba(255, 255, 255, 1),
+                15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+                font-size: 2em;
+            }
+            .Projects .content
+            {
+                margin-top: 20px;
+            }
+            .project-card
+            {
+                background-color: #fff;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                border:1px solid #000;
+                min-height: 400px;
+                width:380px;
+                overflow: hidden;
+                border-radius: 10px;
+                margin: 20px;
+                transition:0.8s ease;
+            }
+            .project-card:hover
+            {
+            transform: scale(1.1);
+            }
+            .project-card:hover .project-main{
+                opacity: 0.9;
+            }
+            .project-main{
+                width: 100%;
+            }
+            .project-info{
+                padding:1.1em;
+            }
+            .project-category{
+                font-size: 0.9em;
+                font-weight: 700;
+                color:#000;
+            }
+            .project-title{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+            .more-details{
+                color: rgb(206, 150, 77);
+                text-transform: uppercase;
+            }
+            .contact .icon{
+                font-size:6.5em;
+            }
+            .contact .info h3{
+                color: #000;
+            }
+            .footer{
+                padding: 15px;
+                background-color: rgb(204, 130, 32);
+                border-top: 1px solid rgb(0,0,0);
+                display: flex;
+                justify-content: space-between;
+            }
+            .footer p{
+                font-weight: 600;
+            }
+            .footer p span{
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            .footer .icons{
+                font-size: 1.7em;
+            }
+            .certificates
+            {
+                padding: 50px;
+            }
+            @media (max-width:1023px){
+                header{
+                    padding:0;
+                }
+                .navigation a{
+                    padding-left: 10px;
+                }
+                .header h1{
+                    float: left;
+                    font-size: 1.4em;
+                }
+                .title{
+                    font-size: 1.5em;
+                }
+                section{
+                    padding: 80px 20px;
+                }
+                .main h2{
+                    font-size: 1.2em;
+                }
+                .main h3{
+                    font-size: 1.1em;
+                }
+                .content{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            @media(max-width:641px){
+                body{
+                    font-size: 12px;
+                }
+            }
+            @media(max-width:300px){
+                body{
+                    font-size: 11px;
+                }
+            }
